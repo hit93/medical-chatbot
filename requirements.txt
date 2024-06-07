@@ -1,8 +1,10 @@
-sentence-transformers==2.2.2
-pinecone-client
+sentence-transformers
 langchain
-langchain_community
+langchain-huggingface
+langchain-community
 flask
 pypdf
 python-dotenv
+tiktoken
+chromadb
 -e .
