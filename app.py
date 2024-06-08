@@ -20,7 +20,7 @@ splits = load_doc(list_file_path=['data\Medical_book.pdf'], chunk_size=300, chun
 # Index
 
 vectordb = Chroma.from_documents(documents=splits,embedding=HuggingFaceEmbeddings())
-print('vector database made')
+
 index_name="medical-bot"
 
 PROMPT=PromptTemplate(template=prompt_template, input_variables=["context", "question"])
